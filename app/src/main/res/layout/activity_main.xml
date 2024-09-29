@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A4515151"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="HabitationAndroid"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcul des impôts locaux"
+        android:textSize="25sp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="590dp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginBottom="40sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textSize="19sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNom"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/corners"
+                android:padding="5sp"
+                android:shadowRadius="20" />
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Adresse"
+                android:textSize="19sp" />
+            />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputAdresse"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/corners"
+                android:padding="5sp"
+                android:shadowRadius="20" />
+
+            <TextView
+                android:id="@+id/surface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Surface"
+                android:textSize="19sp" />
+            />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputSurface"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/corners"
+                android:padding="5sp"
+                android:shadowRadius="20" />
+
+            <TextView
+                android:id="@+id/nbrPieces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Nombre de Pièces"
+                android:textSize="19sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputNbrPieces"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/corners"
+                android:padding="5sp"
+                android:shadowRadius="20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="25sp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Piscine"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCalcul"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/corners"
+                android:backgroundTint="#AFAFAF"
+                android:text="Calcul"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="50sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/impotBase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impôt de base : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/impotSupp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impôt de Supplèmentaire : "
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/impotTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Impôt de base : "
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReinitialiser"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/corners"
+            android:layout_marginLeft="138sp"
+            android:text="Reinitialiser"
+            android:textSize="17sp"
+            android:padding="1sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
